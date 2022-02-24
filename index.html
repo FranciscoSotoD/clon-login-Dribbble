@@ -1,51 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script src="https://kit.fontawesome.com/395514d94b.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap&family=Rochester&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/83ae700929.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="build/css/app.css">
+    
     <title>Inicio de seisón</title>
 </head>
 <body>
-    <div class="container">
-        <div class="container1">
-            <div class="text">
-                <h2>dribbble</h2>
-                <h3>Discover de world's top</h3>
-                <h3>Designers & creatives</h3>
+    <main class="contenidoGrid">
+        <section class="sidebar">
+            <div class="sidebar__elementos">
+                <div class="sidebar__head">
+                    <h1 class="sidebar__heading">dribble</h1>
+                    <p class="sidebar__descripcion">Discover the world's top Designers & Creatives</p>
+                </div>
+                <img class="sidebar__imagen" src="build/img/foto1.svg" alt="ilustración dribble">
+                <p class="sidebar__by">Clon by <span class="sidebar__autor">Francisco Soto</span></p>
             </div>
-        </div>
-
-        <div class="container2">
-            <div class="member">
-                <p class="memberText">Not a member? <a href="#">Sign up now</a></p>
+        </section>
+        <section class="login">
+            <div class="login__memberDesktop">
+                <p class="login__notMember">Not a member</p>
+                <a class="login__singUp" href="#">Sing up now</a>
             </div>
-
-            <div class="containerForm">
-                <div class="formCenter">
-                    <div class="form">
-                        <p class="signin">Sign in to Dribble</p>
-                        <div class="logins">
-                            <a class="google" href="#"><i class="fab fa-google"></i> Sign in with Google.</a>
-                            <a href="#"><i class="fab fa-twitter-square twitter"></i></a>
+            <div class="inicio">
+                <h1 class="inicio__heading">dribble</h1>
+                <p class="inicio__singIn">Sing in to Dribble</p>
+                <div class="enlaces">
+                    <a class="enlaces__accederGoogle" href="#">
+                        <div class="enlaces__imgGoogle">
+                            <img class="enlaces__imagenGoogle" src="build/img/iconGoogle.svg" alt="icono de google">
                         </div>
-                
-                        <p class="user">User name or Email Address</p>
-                        <input type="text"required>
-                        <div class="passwords">
-                            <a class="password">Password</a>
-                            <a class="forgotPass" href="#">Forgot password?</a>
-                        </div>
-                        <input type="password" required>
-                        <input type="submit" value="Sign In" class="sign-in">
+                        Acceder con Google
+                    </a>
+                    <a class="enlaces__accederTwitter" href="#">
+                        <i class="fa-brands fa-twitter iconTwitter"></i>
+                    </a>
+                </div>
+                <hr class="enlaces__divider">
+                <form class="form" action="">
+                    <label class="form__label" for="username">Username or Email Address</label>
+                    <input class="form__input" id="username" type="text">
+                    <div class="form__pass">
+                        <label class="form__label" for="password">Password</label>
+                        <a class="form__forgot" href="#">Forgot password?</a>
                     </div>
+                    <input class="form__input" id="password" type="password">
+                    <input class="form__submit" type="submit" value="Sign In">
+                </form>
+                <div class="login__memberMovil">
+                    <p class="login__notMember">Not a member</p>
+                    <a class="login__singUp" href="#">Sing up now</a>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>

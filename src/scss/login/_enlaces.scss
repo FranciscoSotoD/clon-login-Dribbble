@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+
+.enlaces {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 2rem;
+    &__accederGoogle {
+        background-color: v.$azulFuerte;
+        padding: .2rem;
+        border-radius: .5rem;
+        color: v.$blanco;
+        font-size: 1.4rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 3rem;
+        align-items: center;
+        min-width: 25rem;
+        transition-property: background-color;
+        transition-duration: .3s;
+        &:hover {
+            background-color: lighten( v.$azulFuerte, 10% );
+        }
+    }
+    &__imgGoogle {
+        background-color: v.$blanco;
+        border-radius: .2rem;
+        padding: .7rem;
+    }
+    &__imagenGoogle {
+        width: 1.8rem;
+    }
+    &__accederTwitter {
+        background-color: v.$grisClaro;
+        color: darken( v.$grisClaro, 50% );
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        transition-property: background-color color;
+        transition-duration: .3s;
+        &:hover {
+            background-color: darken( v.$grisClaro, 5% );
+            color: v.$azulFuerte;
+        }
+    }
+    &__divider {
+        margin: 4rem 0;
+        color: v.$grisClaro;
+    }
+}

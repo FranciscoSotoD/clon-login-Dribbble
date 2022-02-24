@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sidebar {
+    // border: .5rem solid blue;
+    display: none;
+    @include m.laptop {
+        display: block;
+        min-width: 52.4rem;
+        max-width: 52.4rem;
+        background-color: v.$rosaBajo;
+        height: 100vh;
+    }
+    &__head {
+        padding: 3rem 0 3rem 6rem;
+    }
+    &__heading {
+        font-family: v.$fuenteCursiva;
+        text-transform: lowercase;
+        font-size: 3rem;
+        text-align: left;
+        color: v.$rosaFuerte;
+        @include m.desktop {
+            font-size: 4rem;
+        }
+    }
+    &__descripcion {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: v.$rosaFuerte;
+        line-height: 1;
+        max-width: 40rem;
+        @include m.desktop {
+            font-size: 3.4rem;
+        }
+    }
+    &__imagen {
+        margin: 5rem 0;
+        width: 100%;
+        display: none;
+        @include m.desktop {
+            display: block;
+        }
+    }
+    &__by {
+        display: none;
+        @include m.desktop {
+            display: block;
+            color: v.$rosaFuerte;
+            font-size: 1.6rem;
+            padding-left: 4rem;
+        }
+    }
+    &__autor {
+        text-decoration: underline;
+    }
+}

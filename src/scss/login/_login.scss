@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.login {
+    padding: 2rem;
+    margin: 0 auto;
+    @include m.laptop {
+        margin-top: 12rem;
+    }
+    @include m.desktop {
+        margin-top: 28rem;
+    }
+    &__memberDesktop {
+        display: none;
+        @include m.laptop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 2.2rem 2.6rem 0 0;
+        }
+    }
+    &__notMember {
+        font-size: 1.4rem;
+    }
+    &__singUp {
+        color: v.$azulFuerte;
+        font-size: 1.4rem;
+    }
+    &__memberMovil {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+        @include m.laptop {
+            display: none;
+        }
+    }
+
+}

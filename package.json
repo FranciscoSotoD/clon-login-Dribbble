@@ -1,0 +1,33 @@
+{
+  "name": "logindribbble",
+  "version": "1.0.0",
+  "description": "Creando proyecto con Sass",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoSotoD/loginDribbble.git"
+  },
+  "author": "Francisco Soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoSotoD/loginDribbble/issues"
+  },
+  "homepage": "https://github.com/FranciscoSotoD/loginDribbble#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-avif": "^1.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.8",
+    "sass": "^1.42.1"
+  }
+}

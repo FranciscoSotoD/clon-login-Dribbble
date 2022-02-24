@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.inicio {
+    max-width: 40rem;
+    margin: 0 auto;
+    &__heading {
+        text-align: left;
+        font-family: v.$fuenteCursiva;
+        font-size: 3.8rem;
+        text-transform: lowercase;
+        margin: 0;
+        @include m.laptop {
+            display: none;
+        }
+    }
+    &__singIn {
+        font-weight: 700;
+        padding: 1rem 0;
+        font-size: 2.8rem;
+    }
+}
