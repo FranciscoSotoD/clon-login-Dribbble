@@ -46,14 +46,14 @@
                     </a>
                 </div>
                 <hr class="enlaces__divider">
-                <form class="form" action="">
+                <form class="form" id="formulario">
                     <label class="form__label" for="username">Username or Email Address</label>
                     <input class="form__input" id="username" type="text">
                     <div class="form__pass">
                         <label class="form__label" for="password">Password</label>
                         <a class="form__forgot" href="#">Forgot password?</a>
                     </div>
-                    <input class="form__input" id="password" type="password">
+                    <input class="form__input" id="password" type="password" autocomplete="on">
                     <input class="form__submit" type="submit" value="Sign In">
                 </form>
                 <div class="login__memberMovil">
@@ -63,5 +63,7 @@
             </div>
         </section>
     </main>
+
+    <script src="build/js/app.js" type="module"></script>
 </body>
 </html>
